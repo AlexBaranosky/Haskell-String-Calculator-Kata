@@ -6,14 +6,14 @@ license: AllRightsReserved
 license-file: ""
 copyright:
 maintainer:
-build-depends: base -any, regex-posix -any, split -any
+build-depends: MissingH -any, base -any, regex-posix -any,
+               split -any
 stability:
 homepage:
 package-url:
 bug-reports:
 synopsis: HaskellStringCalculatorKata
 description: .
-             .
 category:
 author:
 tested-with:
