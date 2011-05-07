@@ -9,15 +9,15 @@ main = do
    assertEquals "can separate numbers by either ',' or '\n'" 9 $ add "2\n3,4"
    assertEquals "can specify your own delimiter" 3 $ add "//;\n1;2"
 
-add = sum . numbersFrom .  splitIntoDelimiterWithNumbers
+add = sum . numbersFrom . splitIntoDelimiterWithNumberString
 
-splitIntoDelimiterWithNumbers string
+splitIntoDelimiterWithNumberString string
    | string == ""                      = (',', "0")
    | startswith "//" string = (string !! 2, drop 4 string)
    | otherwise                       = (',', string)
 
-numbersFrom (delimiter, numbers) =
-   map read $ splitWhen (\c -> c == delimiter || c == '\n') numbers
+numbersFrom (delimiter, numberString) =
+   map read $ splitWhen (\c -> c == delimiter || c == '\n') numberString
 
 assertEquals msg expressionA expressionB =
    putStrLn $ (if expressionA == expressionB then "yes: " else "you failed: ") ++ msg
