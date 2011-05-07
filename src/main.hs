@@ -20,4 +20,4 @@ numbersFrom (delimiter, numberString) =
    map read $ splitWhen (\c -> c == delimiter || c == '\n') numberString
 
 assertEquals msg expressionA expressionB =
-   putStrLn $ (if expressionA == expressionB then "yes: " else "you failed: ") ++ msg
+   putStrLn $ (if expressionA == expressionB then "yes" else "you failed") ++ ": " ++ msg
