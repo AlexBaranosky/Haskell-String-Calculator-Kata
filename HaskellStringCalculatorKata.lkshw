@@ -1,0 +1,10 @@
+Version of workspace file format:
+               1
+Time of storage:
+               "Fri May  6 20:34:14 Eastern Daylight Time 2011"
+Name of the workspace:
+               "HaskellStringCalculatorKata"
+File paths of contained packages:
+               ["HaskellStringCalculatorKata.cabal"]
+Maybe file path of an active package:
+               Just "HaskellStringCalculatorKata.cabal"
