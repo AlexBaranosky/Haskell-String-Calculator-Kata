@@ -6,15 +6,13 @@ license: AllRightsReserved
 license-file: ""
 copyright:
 maintainer:
-build-depends: base -any
+build-depends: base -any, split -any
 stability:
 homepage:
 package-url:
 bug-reports:
 synopsis: HaskellStringCalculatorKata
-description:  
-             .
-             .
+description: .
              .
              .
 category:
@@ -25,7 +23,7 @@ data-dir: ""
 extra-source-files:
 extra-tmp-files:
  
-executable: "HaskellStringCalculatorKata"
+executable: HaskellStringCalculatorKata
 main-is: Main.hs
 buildable: True
 build-tools:
